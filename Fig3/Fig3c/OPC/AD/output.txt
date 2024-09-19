@@ -1,0 +1,4 @@
+MG.AD.Filt.allATAC.ALT.SNPs.200bp.V2.txt
+MG.AD.Filt.allATAC.SNPs.200bp.V2.txt
+Ref_Shuffled.MG.AD.Filt.allATAC.SNPs.200bp.V2.txt
+Alt_Shuffled.MG.AD.Filt.allATAC.SNPs.200bp.V2.txt

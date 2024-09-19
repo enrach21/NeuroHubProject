@@ -1,0 +1,4 @@
+Scz.Filt.allATAC.SNPs.200bp.5.1.24.V2.txt
+Scz.Filt.allATAC.ALT.SNPs.200bp.5.1.24.V2.txt
+Scz_Ref_Shuffled.SNPs.200bp.5.1.24.V2.txt
+Scz_Alt_Shuffled.SNPs.200bp.5.1.24.V2.txt
