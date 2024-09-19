@@ -1,0 +1,5 @@
+File,Color,Name,Bin
+/wynton/group/shen/NeuroHub.7.23.21/Final/PLAC/Anchor/Oligo/peaks_0.01/oligo.shrt.30mil_peaks.broadPeak,#1B7837,Oligo,/shen/shenlabstore3/shared/PLAC-seq_analysis/utils/BinnedGenome/hg38.2kb.bed
+/wynton/group/shen/NeuroHub.7.23.21/Final/PLAC/Anchor/oRG/peaks_0.01/oRG.shrt.30mil_peaks.broadPeak,#B2182B,oRG,/shen/shenlabstore3/shared/PLAC-seq_analysis/utils/BinnedGenome/hg38.2kb.bed
+/wynton/group/shen/NeuroHub.7.23.21/Final/PLAC/Anchor/vRG/peaks_0.01/vRG.shrt.30mil_peaks.broadPeak,#2166AC,vRG,/shen/shenlabstore3/shared/PLAC-seq_analysis/utils/BinnedGenome/hg38.2kb.bed
+/wynton/group/shen/NeuroHub.7.23.21/Final/PLAC/Anchor/MG/peaks_0.01/MG.shrt.30mil_peaks.broadPeak,#762A83,MG,/shen/shenlabstore3/shared/PLAC-seq_analysis/utils/BinnedGenome/hg38.2kb.bed
