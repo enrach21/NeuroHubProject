@@ -6,6 +6,93 @@ library(data.table)
 library(ggplot2)
 
 
+# Perform fisher enrichment for cCREs and controls
+enrichement_test <- function(bed, cCRE, PLAC, head=TRUE) {
+    
+    # Read in PLAC-seq
+    PLAC_DF <- fread(PLAC)
+    dim(PLAC_DF)
+    head(PLAC_DF)
+
+    # filter for only XOR interactions
+    PLAC_DF <- PLAC_DF[PLAC_DF$type == 'XOR',]
+    dim(PLAC_DF)
+    head(PLAC_DF)
+    
+    # Read in cCREs
+    cCRE_DF <- ReadCRE(cCRE)
+    head(cCRE_DF)
+    dim(cCRE_DF)
+
+    # Retain only XOR interactions in with cCRE in distal region
+    PLAC_cCRE_DF <- bt.intersect(a=PLAC_DF, b=cCRE_DF)
+    
+    # Look at whole 2kb bin
+    # PLAC_cCRE_DF <- bt.intersect(a=PLAC_DF, b=cCRE_DF, wa=T, u=T)
+    
+    dim(PLAC_cCRE_DF)
+    head(PLAC_cCRE_DF)
+
+    # Make test bed file
+    test_df <- PLAC_cCRE_DF[,1:3]
+    print('Test...')
+    print(head(test_df))
+    print(dim(test_df))
+    
+    # Make controls bed file  
+    temp_df <- PLAC_cCRE_DF %>% separate('V4',into=c('chr','loc'),sep=':' ) %>% 
+    separate('loc',into=c('start','end'),sep='-')
+    # Get distance from anchor to distal element
+    d <- as.numeric(temp_df$start) - test_df$V3
+    d1 <- as.numeric(temp_df$start) - test_df$V2
+    new_start <- (as.integer(temp_df$start)+d)
+    new_end <- (as.integer(temp_df$start)+d1)
+    control_df <- data.frame('chr'=temp_df$chr, 'start'=as.integer(new_start) , 'end'=as.integer(new_end))
+
+    # Remove any less than zero
+    control_df<- control_df[!(control_df$start < 0),]
+
+
+    # Remove any controls also in test
+    control_df <- bt.intersect(control_df, test_df , v=T)
+    head(control_df)
+    dim(control_df)
+    
+    print('control...')
+    print(head(control_df))
+    print(dim(control_df))
+    
+    # Make sure control and test don't overlap
+    print('Make sure no overlap...')
+    print(dim(bt.intersect(test_df, control_df,u=T)))
+    dim(bt.intersect(test_df, test_df, u=T))
+    dim(bt.intersect(control_df, control_df, u=T))
+    
+    # read in bed file
+    bed_df <- read.table(bed, header=head)
+    head(bed_df)
+    
+    # Get overlap with test
+    a <- dim(bt.intersect(bed_df[,1:3],test_df,wa=T, u=T))[1]
+    a
+    b <- dim(bt.intersect(bed_df[,1:3],test_df,v=T))[1]
+    b
+    c <- dim(bt.intersect(bed_df[,1:3],control_df,wa=T, u=T))[1]
+    c
+    d <- dim(bt.intersect(bed_df[,1:3],control_df,v=T))[1]
+    d
+    
+    final_df <- data.frame( 'Bed_Y'=c(a,c),
+                      'Bed_N'=c(b,d))
+    row.names(final_df) <- c('cCRE','Control')
+    print(final_df)
+    
+    res <- fisher.test(final_df)
+    
+    return(c(a,c, b,d,  res$estimate,res$conf.int[1],res$conf.int[2],res$p.value, bed, cCRE, PLAC))
+    
+}
+
 #### Negative vista overlap ####
 
 df <- data.frame()

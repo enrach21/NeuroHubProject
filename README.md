@@ -1,6 +1,8 @@
-# Characterizing the Non-Coding Genome of Glial Cells in the Developing Human Cortex
-
-#### Fig1: Collecting and annotating cCREs within the developing cortex  ####
+# 3D-epigenomic Characterization of Regulatory Elements, Neuropsychiatric Risk Variants, and Human Accelerated Regions in the Developing Human Cortex.
+    This github contains the scripts used to generate figures for the following manuscript. For questions pelase contact Ian.Jones3@ucsf.edu.
+    
+#### Fig1(Fig1): Collecting and annotating cCREs within the developing cortex  ####
+    Fig4a(Fig1/Fig1c)
 
 #### Fig2: cCREsLMAR  are associated with transcriptional regulation and enhancer activity. ####
 
