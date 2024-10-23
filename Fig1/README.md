@@ -1,9 +1,11 @@
-# Fig1: Collecting and annotating cCREs within the developing cortex  
+# Fig1: Annotating the epigenome and identifying cCREs 
 
-#### Scripts involved in the creation of figure one. #####
-    Fig1c: Obtaining TMM-normalized RPKM and expression of Marker Genes
-    Fig1d: Venn of cCRE_LMARs
-    Fig1e: Homer enrichment of cCRE_LMARs for each cell type
-    Fig1f: Summary of PLAC-seq counts
-    Fig1g: Overlap cCRE_LMARs with XOR PLAC bins and obtain percentage
-    Fig1h: Compare interaction strength of bins with cCRE_LMARs to those without
+## Scripts involved in the creation of figure one.
+1. Fig1c: 
+    - Obtaining TMM-normalized RPKM and expression of Marker Genes
+        - RNA-seq processing can be found [here](../DataProcessing/RNA-seq)
+2. Fig1d:
+    - Venn of cCRE LMARs
+        - ATAC-seq processing can be found [here](../DataProcessing/ATAC-seq)
+3. Fig1e:
+    - Homer enrichment of cCRE LMARs for each cell type

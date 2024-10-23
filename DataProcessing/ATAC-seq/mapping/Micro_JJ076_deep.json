@@ -1,0 +1,20 @@
+{
+    "atac.title" : "JJ076",
+    "atac.description" : "Micro",
+
+    "atac.pipeline_type" : "atac",
+    "atac.align_only" : false,
+    "atac.true_rep_only" : false,
+
+    "atac.genome_tsv" : "/shen/shenlabstore3/ijones1/dependencies/ATAC_genomes_new/hg38.tsv",
+
+    "atac.paired_end" : true,
+
+    "atac.fastqs_rep1_R1" : ["/wynton/scratch/ijones1/NH_ATAC/fastp_out/JJ076_YSJJ12.fastp.R1.fq.gz"],
+    "atac.fastqs_rep1_R2" : ["/wynton/scratch/ijones1/NH_ATAC/fastp_out/JJ076_YSJJ12.fastp.R2.fq.gz"],
+
+
+    "atac.auto_detect_adapter" : true,
+
+    "atac.multimapping" : 4
+}
