@@ -2,12 +2,14 @@
 Scripts involved in the creation of figure three.
 
 ### Fig3a: 
-- Count total number of XOR and AND PLAC-seq interactions
-### Fig3b:
-- Obtain number of XOR interactions with distal cCRE^LMAR
-### Fig3c:
-- Comparing contact frequency of XOR interaction with and without distal cCRE^LMAR
+- Volcano plot of DEG
+    - DARs used in this analysis are called [here](/loc/DAR)
+### Fig3bc:
+- Tobias Motif binding differences
+    - "diffTFBS_oRG_vRG_bindetect_results"
+    - "Motif required to have greater than 10 rpkm"
+- Heat map of significant TFs matched with the change in expression
 ### Fig3d:
-- Heatmap of unique significant XOR interaction overlapping to a single cell type with distal cCRE^LMAR
+- LHX2 network created with cytoscpape highlighting DEGs regulated by LHX2 binding sites
 ### Fig3e:
-- Obtains correlation between interactions and expression changes
+- Expression of all targets of the 126 LHX2 motifs predcited to be more bound in oRG

@@ -1,0 +1,19 @@
+{
+    "atac.title" : "Microglia Merged",
+    "atac.description" : "Microglia Merged 3 reps",
+
+    "atac.pipeline_type" : "atac",
+    "atac.align_only" : false,
+    "atac.true_rep_only" : false,
+
+    "atac.genome_tsv" : "/shen/shenlabstore3/ijones1/dependencies/ATAC_genomes_new/hg38.tsv",
+
+    "atac.paired_end" : true,
+
+    "atac.tas" : ["/shen/shenlabstore3/ijones1/NeuroHub/ATAC-seq/mapping/Micro_IJ310_deep/atac/6aa6e956-f91d-4e04-801c-80a010208480/call-bam2ta/shard-0/execution/IJ310_YSXY12.fastp.R1.trim.srt.nodup.no_chrM_MT.tn5.tagAlign.gz", "/shen/shenlabstore3/ijones1/NeuroHub/ATAC-seq/mapping/Micro_JJ019_deep/atac/c4b9da21-4afe-4f20-9452-b17b276f415a/call-bam2ta/shard-0/execution/JJ019_YSJJ07.fastp.R1.trim.srt.nodup.no_chrM_MT.tn5.tagAlign.gz","/shen/shenlabstore3/ijones1/NeuroHub/ATAC-seq/mapping/Micro_JJ076_deep/atac/1bb5ce4f-393e-4777-94b3-e33d1c894836/call-bam2ta/shard-0/execution/JJ076_YSJJ12.fastp.R1.trim.srt.nodup.no_chrM_MT.tn5.tagAlign.gz"],
+
+
+    "atac.auto_detect_adapter" : true,
+
+    "atac.multimapping" : 4
+}
