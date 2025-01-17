@@ -15,7 +15,7 @@ Scripts involved in the creation of figure one.
     - Intervene.Both.sh: Bash script using [Intervene](https://intervene.readthedocs.io/en/latest/modules.html) pacakge
     
 ### Fig1e:
-- Homer enrichment of cCRE LMARs for each cell type
+- [HOMER](http://homer.ucsd.edu/homer/motif/) enrichment of cCRE LMARs for each cell type
 - Files:
     - vRG_Homer.sh: enrich within cCREs found in exclusivley vRG
     - oRG_Homer.sh: enrich within cCREs found in exclusivley oRG

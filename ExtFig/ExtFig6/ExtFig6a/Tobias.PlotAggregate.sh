@@ -1,0 +1,1 @@
+TOBIAS PlotAggregate  --TFBS ../LHX2/oRG_LHX2_motif.bed ../LHX2/vRG_LHX2_motif.bed ../ASCL1/oRG_ASCL1_motif.bed ../ASCL1/vRG_ASCL1_motif.bed --signals ./vRG_merge_corrected.bw ./oRG_merge_corrected.bw --output TF_footprint.pdf --plot_boundaries --signal-on-x --share-y signals

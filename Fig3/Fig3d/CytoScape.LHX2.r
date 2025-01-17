@@ -16,12 +16,6 @@ oRG_motif <- oRG_motif[,c('TFBS_chr','TFBS_start','TFBS_end','oRG_score','oRG_vR
 
 write.table(oRG_motif, 'oRG_LHX2_motif.bed',col.names = F, row.names = F, quote = F, sep= '\t')
 
-vRG_motif <- df[df$vRG_bound==1 & df$oRG_vRG_log2fc <= -1 ,]
-vRG_motif <- vRG_motif[,c('TFBS_chr','TFBS_start','TFBS_end','vRG_score','oRG_vRG_log2fc')]
-
-write.table(vRG_motif, 'vRG_LHX2_motif.bed',col.names = F, row.names = F, quote = F, sep= '\t')
-
-
 #### Read in output from bash file ####
 
 # Read in PLAC-seq output for oRG first

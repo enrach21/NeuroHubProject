@@ -1,0 +1,2 @@
+MG_Pos_chr2_predict_output.txt
+MG_Neg_chr2_predict_output.txt
