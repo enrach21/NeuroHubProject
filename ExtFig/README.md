@@ -51,11 +51,15 @@
         - Final_Model_Training
             - Code to perform final training of the model
     ExtFig7c: Overview of AD SNP prioritization
-        -Analyze_SNPs.200bp.R
+        - Analyze_SNPs.200bp.R
             - Script to obtain 200bp surrounding 
         - Model_Eval
             - Contains script for predicitons for all AD variants across the four celltypes
     ExtFig7d: Overview of SCZ prioritizaiton
+        - Analyze_SNPs.200bp.R
+            - Script to obtain 200bp surrounding 
+        - Model_Eval
+            - Contains script for predicitons for all AD variants across the four celltypes
     ExtFig7e: Comparision of GKM delta, explain and ISM prediction for AD variants using the MG model
     ExtFig7f: Comparision of GKM delta, explain and ISM prediction for SCZ variants using the vRG model
 
