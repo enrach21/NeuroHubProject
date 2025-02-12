@@ -29,7 +29,7 @@ Get.AND.XOR <- function(DF,NAME){
                                     
 }
 
-### Plot Fig 1F #### 
+### Plot Fig 2A #### 
 
 # Get AND and XOR Reads
 OC_TYPE_DF <- Get.AND.XOR(OC_DF, 'OPC')

@@ -7,3 +7,4 @@
     - JSON input for mapping with [ENCODE Pipeline](https://www.encodeproject.org/atac-seq/)
     - Peaks: Optimal Overaapping peaks were used in down stream analysis
 3. DARs
+    - DiffBind used to call DARs

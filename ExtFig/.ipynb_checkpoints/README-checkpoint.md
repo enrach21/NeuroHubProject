@@ -51,11 +51,15 @@
         - Final_Model_Training
             - Code to perform final training of the model
     ExtFig7c: Overview of AD SNP prioritization
-        -Analyze_SNPs.200bp.R
+        - Analyze_SNPs.200bp.R
             - Script to obtain 200bp surrounding 
         - Model_Eval
             - Contains script for predicitons for all AD variants across the four celltypes
     ExtFig7d: Overview of SCZ prioritizaiton
+        - Analyze_SNPs.200bp.R
+            - Script to obtain 200bp surrounding 
+        - Model_Eval
+            - Contains script for predicitons for all AD variants across the four celltypes
     ExtFig7e: Comparision of GKM delta, explain and ISM prediction for AD variants using the MG model
     ExtFig7f: Comparision of GKM delta, explain and ISM prediction for SCZ variants using the vRG model
 
@@ -67,4 +71,12 @@
     ExtFig8f: SCZ variants predicted to lead to greater accessibilty
     ExtFig8g: Browser of signal at rs4449074 locus for heterozygous and homozygous individuals
 
-### ExtFig9:
+### ExtFig9: Enrichment of HARs within the developing cortex
+    ExtFig9a: Upset plot of vRG and oRG LMARs and IPC, iN, and eN ATAC peaks
+    ExtFig9b: Denisity plots of random cCRE overlap with HARs
+    
+### ExtFig10: GKM prediction of HAR variants between human and chimp
+    ExtFig10a:
+    ExtFig10b:
+    ExtFig10c:
+    ExtFig10d:

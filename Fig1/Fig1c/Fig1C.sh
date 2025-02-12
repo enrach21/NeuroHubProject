@@ -14,7 +14,7 @@ conda activate r_analysis
 
 
 
-#### Get barplot for PR0.9 ####
+#### Get barplot  ####
 # Location of normalized expression
 RNA=/shen/shenlabstore3/ijones1/ShenAnalysis/NeuroHub/Scripts/RNA-seq/Marker_expression/AVG_TMM_RPKM_NoLog_exp_geneID_9.20.23.csv
 # Chosen Marker genes

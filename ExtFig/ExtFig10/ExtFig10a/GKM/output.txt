@@ -1,0 +1,4 @@
+HAR.allATAC.variants.8.9.24.score.txt
+HAR_ALT.allATAC.variants.8.9.24.V2.score.txt
+Ref_Shuffled.HAR.allATAC.variants.8.9.24.V2.score.txt
+Alt_Shuffled.HAR.allATAC.variants.8.9.24.V2.score.txt

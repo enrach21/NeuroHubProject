@@ -5,3 +5,6 @@
     - Fastp was used to trim and remove low quality reads
     - STAR mapped each reads
     - RSEM to quantified the gene expression
+2. expression_TMM_RPKM
+    - Obtain TMM-RPKM with edgeR
+3.

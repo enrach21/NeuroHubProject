@@ -71,4 +71,12 @@
     ExtFig8f: SCZ variants predicted to lead to greater accessibilty
     ExtFig8g: Browser of signal at rs4449074 locus for heterozygous and homozygous individuals
 
-### ExtFig9:
+### ExtFig9: Enrichment of HARs within the developing cortex
+    ExtFig9a: Upset plot of vRG and oRG LMARs and IPC, iN, and eN ATAC peaks
+    ExtFig9b: Denisity plots of random cCRE overlap with HARs
+    
+### ExtFig10: GKM prediction of HAR variants between human and chimp
+    ExtFig10a: Schematic of HAR prioritization
+    ExtFig10b: Visualize HAR_0013
+    ExtFig10c: Scatterplot of motifbreakR predicitons and accessiblity change predictions
+    ExtFig10d: Luciferase for variants predicted to be higher in Chimp
